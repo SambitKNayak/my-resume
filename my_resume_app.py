@@ -135,20 +135,20 @@ st.markdown("</div>", unsafe_allow_html=True)
 st.markdown("<div class='container'>", unsafe_allow_html=True)
 st.markdown(f"<h2 class='section-title'>Skills</h2>", unsafe_allow_html=True)
 
-# Bar chart for skills
-fig = px.bar(
-    skills_df, x="Skill", y="Grade",
-    text="Grade", labels={"Skill": "Skill", "Grade": "Grade"},
-    color_discrete_sequence=["#FF5733", "#FFB733", "#33FF57", "#33B5FF", "#FF33F2"]
-)
-fig.update_layout(
-    xaxis_title=None,
-    yaxis_title="Grade",
-    showlegend=False,
-    plot_bgcolor="rgba(0, 0, 0, 0)",
-    paper_bgcolor="rgba(0, 0, 0, 0)",
-)
-st.plotly_chart(fig)
+# # Bar chart for skills
+# fig = px.bar(
+#     skills_df, x="Skill", y="Grade",
+#     text="Grade", labels={"Skill": "Skill", "Grade": "Grade"},
+#     color_discrete_sequence=["#FF5733", "#FFB733", "#33FF57", "#33B5FF", "#FF33F2"]
+# )
+# fig.update_layout(
+#     xaxis_title=None,
+#     yaxis_title="Grade",
+#     showlegend=False,
+#     plot_bgcolor="rgba(0, 0, 0, 0)",
+#     paper_bgcolor="rgba(0, 0, 0, 0)",
+# )
+# st.plotly_chart(fig)
 
 # Certification
 st.markdown("<div class='container'>", unsafe_allow_html=True)
